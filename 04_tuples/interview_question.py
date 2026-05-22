@@ -1,9 +1,7 @@
-import operator
 '''
 1. What is difference between List and Tuple?
 
 '''
-from 01_basics.List import a
 
 
 '''
