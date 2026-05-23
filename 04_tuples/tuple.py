@@ -26,3 +26,16 @@ Hashability,Unhashable (cannot be dictionary keys),Hashable (if all internal ele
 
 my_tuple = (1, 2, 3, "ashar", "ali", "khan")
 print("Original Tuple", my_tuple, type(my_tuple))
+
+
+'''
+Tuple Unpacking
+'''
+def get_values():
+    return 1,2,3,4,5,6,7,8,9,10
+
+first, *middle, last = get_values()
+
+print(first)
+print(last)
+print(middle)
