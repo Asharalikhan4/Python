@@ -42,3 +42,11 @@ print("Flatten List", flatted_matrix)
 -> The Trap: The first one uses square brackets [] and is a list comprehension. It generates all one million items in memory at once, which could crash your program.
 The Answer: The second one uses parentheses () and is a generator expression. It doesn't create a list; it creates an object that generates the numbers one at a time only when asked for them. It uses almost zero memory, making it far superior for massive datasets.
 '''
+
+
+'''
+6. Generator Comprehensions for Memory Optimization
+'''
+daily_sales = [5, 10, 12, 7, 3, 8, 9, 15]
+total_cups = (sale for sale in daily_sales if sale > 5)
+print("Total Cups", total_cups, sum(total_cups))
